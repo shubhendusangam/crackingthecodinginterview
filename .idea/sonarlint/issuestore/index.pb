@@ -15,3 +15,13 @@ d
 .src/test/java/com/practicealgo/URLifyTest.java,7/4/7463992e80b5e263e3ddcbfe156c946eacf8f531
 h
 8src/test/java/com/practicealgo/PermutationCheckTest.java,8/8/8842c24cdedef07cb3a65b6dff6e7af0157b8fc1
+b
+2src/main/java/com/linkedlist/LinkedListInsert.java,f/c/fce7252ebbf9771999ccb211a2f0d928532aed46
+^
+.src/test/java/com/practicealgo/OneWayTest.java,2/1/213ba9cfaba1de90f07c14b14c0467b45e5b1919
+Z
+*src/main/java/com/practicealgo/OneWay.java,7/f/7f7f7b5d5d37f1cf9145793411f8f4c841c24c55
+m
+=src/test/java/com/practicealgo/PalindromePermutationTest.java,6/4/642ad5ecd340f80d9828c363bc60cb2c73deeb58
+i
+9src/main/java/com/practicealgo/PalindromePermutation.java,5/6/565d3d8bcce6ad93cdf6a9622701a106391f5b88
