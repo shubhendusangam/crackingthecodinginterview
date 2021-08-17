@@ -1,4 +1,4 @@
-package com.practicealgo;
+package com.arraysandstrings;
 
 /*
 *

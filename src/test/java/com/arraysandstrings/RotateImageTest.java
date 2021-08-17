@@ -1,4 +1,4 @@
-package com.practicealgo;
+package com.arraysandstrings;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -53,6 +53,16 @@ public class RotateImageTest {
       };
       Assert.assertArrayEquals(expectedMatrix90AntiClockWise, actualResult90AntiClockWise);
 
+      int[][] iMatrix =
+            {
+                  {1, 2, 3, 4},
+                  {5, 6, 7, 8},
+                  {9, 10, 11, 12},
+                  {13, 14, 15, 16}
+            };
+
+      int[][] actualResult = RotateImage.rotate(iMatrix, iMatrix.length);
+      Assert.assertArrayEquals(expectedMatrix90ClockWise, actualResult);
    }
 
 }
