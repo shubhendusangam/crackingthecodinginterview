@@ -1,32 +1,23 @@
 package com.linkedlist;
 
 public class LinkedListInsert {
+   Node head;
    public static void main(String[] args) {
 
-      Node rootNode = null;
-      rootNode = insertElement(20, rootNode);
-      rootNode = insertElement(30, rootNode);
-      rootNode = insertElement(40, rootNode);
-      rootNode = insertElement(15, rootNode);
-      rootNode = insertElement(6, rootNode);
+      LinkedListInsert linkedListInsert = new LinkedListInsert();
+      linkedListInsert.add(10);
+      linkedListInsert.add(20);
+      linkedListInsert.add(30);
+      linkedListInsert.add(40);
 
-      rootNode = addFirst(1, rootNode);
+      Node updatedList = linkedListInsert.addFirst(1);
 
-      printLinkedList(rootNode);
+      printLinkedList(updatedList);
    }
 
-   public static Node insertElement(int dt , Node rootNode) {
-      if (rootNode == null) {
-         rootNode = new Node(dt);
-      } else {
-         rootNode.next = insertElement(dt, rootNode.next);
-      }
-      return rootNode;
-   }
-
-   public static Node addFirst(int data, Node node) {
+   public Node addFirst(int data) {
       Node rootNode = new Node(data);
-      rootNode.next = node;
+      rootNode.next = head;
       return rootNode;
    }
 
@@ -37,6 +28,18 @@ public class LinkedListInsert {
       }
    }
 
+   public void add(int data) {
+      Node node = new Node(data);
+      if (head == null) {
+         head = node;
+      } else {
+         Node tempNode = head;
+         while (tempNode.next != null) {
+            tempNode = tempNode.next;
+         }
+         tempNode.next = node;
+      }
+   }
 }
 
 class Node {

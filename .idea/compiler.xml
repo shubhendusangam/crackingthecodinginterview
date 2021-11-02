@@ -9,5 +9,8 @@
         <module name="crackingthecodinginterview" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crackingthecodinginterview" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
