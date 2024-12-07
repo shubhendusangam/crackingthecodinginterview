@@ -13,10 +13,7 @@ import java.util.Map;
 public class PalindromePermutation {
    public static boolean palindromePermutation(String phrase) {
       Map<Character, Integer> characterCount = getCharacterCount(phrase.toLowerCase());
-      boolean isEvenString = false;
-      if (phrase.length() % 2 == 0) {
-         isEvenString = true;
-      }
+      boolean isEvenString = phrase.length() % 2 == 0;
       return checkOddEvenCount(characterCount.values(), isEvenString);
    }
 

@@ -13,11 +13,9 @@ public class StringRotationTest {
       boolean isRotate = StringRotation.isRotation(s1, s2);
       Assert.assertTrue(isRotate);
 
-
       s1 = "abcde";
       s2 = "tdeab";
       isRotate = StringRotation.isRotation(s1, s2);
       Assert.assertFalse(isRotate);
-
    }
 }
