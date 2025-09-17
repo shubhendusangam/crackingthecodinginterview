@@ -40,7 +40,7 @@ public class PermutationInString {
 
         // Keep a matched counter for how many characters have matched the required frequency
         int start = 0, matchedCounter = 0;
-        // Expand the window by adding
+        // Expand the window
         for (int end = 0; end < str.length(); end++) {
             char endChar = str.charAt(end);
 
@@ -65,7 +65,7 @@ public class PermutationInString {
                 // adjust counts
                 if (map.containsKey(startChar)) {
                     if (map.get(startChar) == 0) {
-                        matchedCounter++;
+                        matchedCounter--;
                     }
                     map.put(startChar, map.get(startChar) + 1);
                 }
